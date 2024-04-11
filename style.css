@@ -3,7 +3,7 @@
 *{
     margin: 0;
     padding: 0;
-    scrollbar-width: smooth !important;
+    scroll-behavior: smooth !important;
 }
 
 .corsivo{
@@ -14,30 +14,8 @@ body{
     color: #2a2b32;
     width: 100%;
     font-family: "Montserrat", sans-serif;
-    font-size: 15px;
-}
-
-@media only screen and (max-width: 800px) {
-    body{
-        font-size: 13px;
-    }
-}
-
-@media only screen and (max-width: 600px) {
-    body{
-        font-size: 11px;
-    }
-}
-
-@media only screen and (max-width: 500px) {
-    body{
-        font-size: 9px;
-    }
-
-    .navbar p{
-        padding: 10px 10px !important;
-        font-size: 1em !important;
-    }
+    font-size: 19px;
+    background-color: #fafafa;
 }
 
 .section{
@@ -46,7 +24,10 @@ body{
 }
 
 #home{
-    height: 85vh;
+    position: sticky;
+    position: -webkit-sticky;
+    z-index: 999;
+    color: white;
 }
 
 .background_img{
@@ -71,7 +52,7 @@ body{
     justify-content: center;
 }
 
-#txt-logo h3{
+#txt-logo h3{ 
     color: white;
     text-align: left;
     margin-top: 15px;
@@ -86,26 +67,54 @@ body{
     -ms-transform: translateY(-50%);
 }
 
-.title{
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    width: 50%;
-    left: 20%;
+.title-left, .title-right{
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 
-.title h1{
-    color: white;
+.title-left{
+    position: relative;
+    width: 60%;
+    left: 10%;
+}
+
+.title-right{
+    position: relative;
+    text-align: right;
+    margin-left: 30%;
+    width: 60%;
+}
+
+#home h1{
+    font-size: 2.2em !important;
+}
+
+#home h2{
+    font-size: 1.8 !important;
+}
+
+.title-right h1, .title-left h1{
+    font-size: 2em;
+}
+
+.title-right h2, .title-left h2{
+    font-size: 1.6em;
+}
+
+.title-right p, .title-left p{
+    font-size: 1.2em;
+}
+
+h2{
     font-weight: 250;
-    font-size: 2.3em;
+    font-size: 2.1em;
 }
 
-.title span{
+span{
     font-weight: 500;
 }
 
-.title button{
+.title-right button, .title-left button{
     color: white;
     border: 1px solid white;
     background: transparent;
@@ -117,7 +126,7 @@ body{
     text-transform: uppercase;
 }
 
-.title button:hover{
+.title-right button:hover, .title-left button:hover{
     cursor: pointer;
 }
 
@@ -144,13 +153,17 @@ body{
 }
 
 .navbar{
-    position: absolute;
+    z-index: 999;
+    position: relative;
+    color: white;
+    width: 100%;
+    background: transparent;
+}
+
+#container{
+    width: 100%;
     display: flex;
     justify-content: center;
-    color: white;
-    bottom: 0;
-    width: 100%;
-    background-color: #8d8e5c;
 }
 
 .navbar a{
@@ -160,10 +173,93 @@ body{
 
 .navbar p:hover{
     border-top: 2px solid #ffff;
+    border-bottom: 2px solid #ffff;
 }
 
 .navbar p{
     border: 2px solid transparent;
-    padding: 10px 30px;
+    padding: 5px 0;
+    margin: 10px 30px;
     font-size: 1.1em;
+    font-weight: 600;
+}
+
+.chi-siamo{
+    text-align: center;
+}
+
+.chi-siamo h1{
+    margin-top: 40px;
+    font-weight: 250;
+    font-size: 2.3em;
+}
+
+.chi-siamo h2{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-weight: 300;
+    font-size: 1.8em;
+    font-family: 'Bad Script';
+}
+
+.chi-siamo h1 span{
+    font-weight: 500;
+}
+
+.chi-siamo .line{
+    width: 150px;
+    border-top: 2px solid #8d8e5c;
+}
+
+.quote{
+    width: 90%;
+    margin-left: 5%;
+}
+
+.colonne{
+    padding: 30px 0;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: space-between;
+    justify-content: center;
+}
+
+.chi-siamo img{
+    width: 27%;
+    min-width: 200px;
+    height: auto;
+    margin: 15px;
+}
+
+.right{
+    margin: 0 10% 0 0 !important;
+    text-align: right;
+}
+
+#catering{
+    color: white;
+}
+
+.title-left h2, .title-right h2{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.title-left p, .title-right p{
+    line-height: 1.4;
+    vertical-align: bottom;
+    margin-top: 5px;
+}
+
+.material-symbols-outlined{
+    font-size: 1.4em !important;
+    font-weight: 300;
+    vertical-align: bottom;
+}
+
+#cene{
+    color: white;
+}
+
+#cene .background_img{
 }

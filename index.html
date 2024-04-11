@@ -4,9 +4,11 @@
     <title>Fontanari</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/x-icon" href="img/logo.png">
+    <link rel="stylesheet" href="mediaRules.css">
+    <link rel="icon" type="image/x-icon" href="img/logo.webp">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="design.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet"
@@ -15,22 +17,45 @@
 
 <body>
     <div class="section" id="home">
-        <div class="navbar">
-            <p><a href="#">Chi Siamo?</a></p>
-            <p><a href="#">Catering</a></p>
-            <p><a href="#">Eventi Serali</a></p>
-            <p><a href="#">Contatta</a></p>
-        </div>
         <div id="txt-logo" class="center-o">
             <h3 class="corsivo">Fontanari<br>Cafè</h3>
         </div>
         <img class="background_img" id="home-bg" src="img/home.jpeg"></img>
-        <div class="title">
-            <h1>
+        <div class="title-left">
+            <h2>
                 Cafè, Ristorazione, Catering ed Eventi Serali.
-                La <span>tradizione</span> incontra l'<span>innovazione</span> risultando in proposte eleganti e professionali.
-            </h1>
+                La <span>tradizione</span> incontra l'<span>innovazione</span> risultando in proposte eleganti e
+                professionali.
+            </h2>
             <a href="#"><button class="slide">Richiedi un preventivo</button></a>
-        </div>   
+        </div>
+        <div class="navbar" id="navbar">
+            <div id="container">
+                <a href="#chi"><p>Chi Siamo?</p></a>
+                <a href="#catering"><p>Catering</p></a>
+                <a href="#"><p>Eventi Serali</p></a>
+                <a href="#"><p>Contattaci</p></a>
+            </div>   
+        </div>
     </div>
+    
+    <div class="section chi-siamo" id="chi">
+        <div class="quote">
+            <h1>Benvenuti da <span>Fontanari Cafè</span></h1>
+            <h2>L'esperienza della tradizione</h2>
+            <div class="center-o">
+                <div class="line"></div>
+            </div>
+            <h2>Ci definiamo un bar moderno, un piccolo BISTROT con pietanze di qualità e dall’atmosfera rilassante e
+                contemporanea.
+            </h2>
+            <h2 class="right">Mattia.</h2>
+            <div class="colonne">
+                <img src="img/chi0.jpg">
+                <img src="img/chi1.jpg">
+                <img id="terzaImg" src="img/chi3.jpg">
+            </div>  
+        </div>
+    </div>
+    
 </body>
