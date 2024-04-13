@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mediaRules.css">
-    <link rel="icon" type="image/x-icon" href="img/logo.webp">
+    <link rel="stylesheet" href="scrollbar.css">
+    <link rel="icon" type="image/x-icon" href="img/logoCircle.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <script src="design.js"></script>
@@ -18,27 +19,35 @@
 <body>
     <div class="section" id="home">
         <div id="txt-logo" class="center-o">
-            <h3 class="corsivo">Fontanari<br>Cafè</h3>
+            <img src="img/logoCircle.png">
         </div>
         <img class="background_img" id="home-bg" src="img/home.jpeg"></img>
-        <div class="title-left">
+        <div class="title-left home">
             <h2>
                 Cafè, Ristorazione, Catering ed Eventi Serali.
                 La <span>tradizione</span> incontra l'<span>innovazione</span> risultando in proposte eleganti e
                 professionali.
             </h2>
-            <a href="#"><button class="slide">Richiedi un preventivo</button></a>
+            <a href="#contatta"><button class="slide">Richiedi un preventivo</button></a>
         </div>
         <div class="navbar" id="navbar">
             <div id="container">
-                <a href="#chi"><p>Chi Siamo?</p></a>
-                <a href="#catering"><p>Catering</p></a>
-                <a href="#"><p>Eventi Serali</p></a>
-                <a href="#"><p>Contattaci</p></a>
-            </div>   
+                <a id="achi">
+                    <p>Chi Siamo?</p>
+                </a>
+                <a id="acat">
+                    <p>Catering</p>
+                </a>
+                <a id="aeve">
+                    <p>Eventi Serali</p>
+                </a>
+                <a id="acont">
+                    <p>Contattaci</p>
+                </a>
+            </div>
         </div>
     </div>
-    
+
     <div class="section chi-siamo" id="chi">
         <div class="quote">
             <h1>Benvenuti da <span>Fontanari Cafè</span></h1>
@@ -49,13 +58,95 @@
             <h2>Ci definiamo un bar moderno, un piccolo BISTROT con pietanze di qualità e dall’atmosfera rilassante e
                 contemporanea.
             </h2>
+            <h3>
+                Trovi il nostro locale a Trento in <a href="https://maps.app.goo.gl/PGHHVUMXfGMTPZ9z8"
+                    target="_blank"><span class="material-symbols-outlined">pin_drop</span>via Alcide Degasperi, n.
+                    51</a>.
+            </h3>
             <h2 class="right">Mattia.</h2>
-            <div class="colonne">
+            <div class="colonne" style="padding: 30px 0;">
                 <img src="img/chi0.jpg">
                 <img src="img/chi1.jpg">
-                <img id="terzaImg" src="img/chi3.jpg">
-            </div>  
+                <img id="terzaImg" src="img/compleanno.jpeg">
+            </div>
         </div>
     </div>
-    
+    <div class="section" id="catering">
+        <img class="background_img" id="home-bg" src="img/catering.jpg"></img>
+        <div class="title-right">
+            <h1>Catering</h1>
+            <h2>Descrizione Catering</h2>
+            <p><span class="material-symbols-outlined">phone</span> 0461-1594077</p>
+            <p><span class="material-symbols-outlined">mail</span> info@fontanaricafe.it</p>
+        </div>
+    </div>
+    <div class="section" id="eventi">
+        <img class="background_img" id="home-bg" src="img/eventi.jpg"></img>
+        <div class="title-left">
+            <h1>Eventi Serali</h1>
+            <h2>Descrizione feste e eventi</h2>
+            <p><span class="material-symbols-outlined">phone</span> 0461-1594077</p>
+            <p><span class="material-symbols-outlined">mail</span> info@fontanaricafe.it</p>
+        </div>
+    </div>
+    <div class="section" id="contatta">
+        <h1 class="corsivo">Richiedi informazioni</h1>
+        <div class="colonne form">
+            <form name="contact" method="POST" data-netlify="true">
+                <div class="campoForm primo">
+                    <p>Nominativo</p>
+                    <input name="nominativo" id="nominativo" placeholder="nominativo" type="text" tabindex="1" required>
+                </div>
+                <div class="campoForm">
+                    <p>Indirizzo email</p>
+                    <input placeholder="indirizzo email" id="email" type="email" name="email" tabindex="2" required>
+                </div>
+                <div class="campoForm">
+                    <p>Numero di telefono</p>
+                    <input name="telefono" placeholder="numero di telefono" id="telefono" type="tel" tabindex="3"
+                        pattern="[0-9]{10}" title="inserisci un numero di telefono valido" required>
+                </div>
+                <div class="campoForm">
+                    <p>Messaggio</p>
+                    <textarea name="messaggio" placeholder="messaggio" tabindex="4" id="messaggio"></textarea>
+                </div>
+                <div class="campoForm colonne">
+                    <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Invia</button>
+                </div>
+            </form>
+        </div>
+
+    </div>
 </body>
+
+<script type="text/javascript">
+    const handleSubmit = (event) => {
+        event.preventDefault();
+
+        const myForm = event.target;
+        const formData = new FormData(myForm);
+        var button = document.getElementById("contact-submit");
+        button.disabled = true;
+        button.innerHTML = `Attendere...`;
+
+        fetch("/", {
+            method: "POST",
+            headers: { "Content-Type": "application/x-www-form-urlencoded" },
+            body: new URLSearchParams(formData).toString(),
+        })
+            .then(() => {
+                console.log("Form successfully submitted")
+                button.innerHTML = `Messaggio inviato!`;
+            })
+            .catch((error) => {
+                alert("sembra che qualcosa sia andato storto, si prega di riprovare. Se il proplema persiste porvate a contattarmi via mail");
+                button.innerHTML = `Invia`;
+            });
+        button.disabled = false;
+    };
+
+    document
+        .querySelector("form")
+        .addEventListener("submit", handleSubmit);
+
+</script>
