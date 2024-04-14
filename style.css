@@ -161,6 +161,28 @@ span {
     }
 }
 
+.slideB:hover,
+.slideB:focus {
+    animation: pulseB 2s;
+}
+
+@keyframes pulseB {
+    5% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 #2a2b3262;
+    }
+
+    70% {
+        transform: scale(1);
+        box-shadow: 0 0 0 10px #2a2b3200;
+    }
+
+    100% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 #2a2b3200;
+    }
+}
+
 .navbar {
     z-index: 999;
     position: relative;
@@ -289,20 +311,22 @@ a:hover {
     vertical-align: bottom;
 }
 
-.centrata {
-    text-align: center;
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
-
-#contatta{
+.centrata{
     margin: 30px 0;
 }
 
-#contatta h1 {
+.centrata h1 {
     width: 100%;
     font-weight: 400;
     text-align: center;
+    font-size: 2.3em;
+
+}
+
+.centrata .centerP{
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
 }
 
 fieldset {
@@ -318,10 +342,10 @@ fieldset {
     min-width: 200px;
     padding: 20px 30px;
     background-color: #fafafa;
-    -webkit-box-shadow: -1px 1px 59px -9px #2A2B32;
--moz-box-shadow: -1px 1px 59px -9px #2A2B32;
--o-box-shadow: -1px 1px 59px -9px #2A2B32;
-box-shadow: -1px 1px 59px -9px #2A2B32;
+    -webkit-box-shadow: -1px 1px 30px -9px #2A2B32;
+-moz-box-shadow: -1px 1px 30px -9px #2A2B32;
+-o-box-shadow: -1px 1px 30px -9px #2A2B32;
+box-shadow: -1px 1px 30px -9px #2A2B32;
 }
 
 .campoForm {
@@ -345,4 +369,89 @@ box-shadow: -1px 1px 59px -9px #2A2B32;
     padding: 10px 10px;
     font-family: "Montserrat", sans-serif !important;
     resize: none;
+}
+
+.campoForm button{
+    font-size: 1.1em;
+    padding: 10px;
+    font-family: "Montserrat", sans-serif !important;
+    text-transform: uppercase;
+    border: 1px solid #2a2b32;
+    color: #2a2b32;
+    background: #fafafa;
+    transition: all 0.2s;
+}
+
+.campoForm button:hover{
+    cursor: pointer;
+}
+
+.centrata p{
+    font-size: 1.3em;
+}
+
+.piePagina{
+    margin-top: 40px;
+    padding-top: 20px;
+    color: #fff;
+    background-color: #2a2b32;
+}
+
+.piePagina div{
+    padding: 20px 40px;
+}
+
+.piePagina p{
+    font-size: 1em;
+    min-width: 150px;
+}
+
+.orari h3{
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 1em;
+}
+
+.orari p{
+    margin: 15px 0;
+}
+
+.orari .icone{
+    margin-top: 30px;
+    font-size: 1.3em;
+    letter-spacing: 0.2em;
+}
+
+.icone a{
+    color: #fff !important;
+}
+
+#partner{
+    margin-top: 50px;
+}
+
+#partner a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 15%;
+    padding: 10px;
+    min-width: 140px;
+    object-fit: contain;
+    margin: 15px;
+    background-color: #fff;
+    -webkit-box-shadow: -1px 1px 20px -9px #2A2B32;
+    -moz-box-shadow: -1px 1px 20px -9px #2A2B32;
+    -o-box-shadow: -1px 1px 20px -9px #2A2B32;
+    box-shadow: -1px 1px 20px -9px #2A2B32;
+    transition: all 0.2s;
+}
+
+#partner a:hover{
+    transform: translateY(-10px);
+}
+
+#partner img{
+    width: 100%;
+    height: auto;
 }
