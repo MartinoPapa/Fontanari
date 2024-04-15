@@ -64,8 +64,8 @@ body {
 
 #txt-logo img {
     margin-top: 10px;
-    height: 6em;
-    width: 6em;
+    height: 6.5em;
+    width: 6.5em;
 }
 
 .center-v {
@@ -189,7 +189,6 @@ span {
     color: white;
     width: 100%;
     background: transparent;
-    border-bottom: 2px solid black;
 }
 
 #container {
@@ -204,16 +203,16 @@ span {
 }
 
 .navbar p:hover {
-    border-top: 2px solid #ffff;
-    border-bottom: 2px solid #ffff;
+    border-top: 4px solid #ffff;
 }
 
 .navbar p {
-    border: 2px solid transparent;
-    padding: 5px 0;
-    margin: 10px 30px;
+    border: 4px solid transparent;
+    margin: 0 30px;
+    padding: 15px 0px;
     font-size: 1.1em;
     font-weight: 600;
+    transition: all 0.1s;
 }
 
 .chi-siamo {
@@ -455,3 +454,4 @@ box-shadow: -1px 1px 30px -9px #2A2B32;
     width: 100%;
     height: auto;
 }
+
