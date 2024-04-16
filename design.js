@@ -19,4 +19,6 @@ function computeNavbar(){
     a.setAttribute('onclick', `window.scrollTo(0, document.getElementById('eventi').offsetTop- ${navbar.offsetHeight-2} );`);
     a = document.getElementById("acont");
     a.setAttribute('onclick', `window.scrollTo(0, document.getElementById('contatta').offsetTop- ${navbar.offsetHeight} );`);
+    a = document.getElementById("bcont");
+    a.setAttribute('onclick', `window.scrollTo(0, document.getElementById('contatta').offsetTop- ${navbar.offsetHeight} );`);
 }

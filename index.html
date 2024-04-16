@@ -14,7 +14,7 @@
         rel="stylesheet">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -29,7 +29,7 @@
                 La <span>tradizione</span> incontra l'<span>innovazione</span> risultando in proposte eleganti e
                 professionali.
             </h2>
-            <a href="#contatta"><button class="slide">Richiedi un preventivo</button></a>
+            <a id="bcont"><button class="slide">Richiedi un preventivo</button></a>
         </div>
         <div class="navbar" id="navbar">
             <div id="container">
@@ -92,7 +92,9 @@
     </div>
     <div class="section centrata" id="contatta">
         <h1 class="corsivo">Richiedi informazioni</h1>
-        <p class="centerP">Compila il seguente form, risponderemo il prima possibile.</p>
+        <div class="quote">
+            <p class="centerP">Compila il seguente form, risponderemo il prima possibile.</p>
+        </div>
         <div class="colonne form">
             <form name="contact" method="POST" data-netlify="true">
                 <div class="campoForm primo">
@@ -113,7 +115,8 @@
                     <textarea name="messaggio" placeholder="messaggio" tabindex="4" id="messaggio"></textarea>
                 </div>
                 <div class="campoForm colonne">
-                    <button class="slideB" name="submit" type="submit" id="contact-submit" data-submit="...Sending">Invia</button>
+                    <button class="slideB" name="submit" type="submit" id="contact-submit"
+                        data-submit="...Sending">Invia</button>
                 </div>
             </form>
         </div>
@@ -124,7 +127,8 @@
     <div class="section centrata" id="partner">
         <h1 class="corsivo">I nostri partner</h1>
         <div class="colonne">
-            <a href="https://www.facebook.com/MatteoMolinariTrento" target="_blank"><img src="img/partner/molinari.jpeg"></a>
+            <a href="https://www.facebook.com/MatteoMolinariTrento" target="_blank"><img
+                    src="img/partner/molinari.jpeg"></a>
             <a href="https://www.corvee.wine/" target="_blank"><img src="img/partner/corvèe.jpeg"></a>
             <a href="#" target="_blank"><img src="img/partner/creative.jpeg"></a>
         </div>
@@ -136,13 +140,15 @@
             </div>
             <div>
                 <p><span class="material-symbols-outlined">phone</span> 0461-1594077</p>
-            <p><span class="material-symbols-outlined">mail</span> info@fontanaricafe.it</p>
+                <p><span class="material-symbols-outlined">mail</span> info@fontanaricafe.it</p>
             </div>
             <div class="orari">
                 <h3>Orari di apertura</h3>
                 <p>LUN - VEN <br> 07:00 - 21:00</p>
                 <p>SAB <br> 07:00 - 13:00</p>
-                <p class="icone"><a href="https://www.facebook.com/fontanaricafe" class="fa fa-facebook" target="_blank"></a> <a href="https://www.instagram.com/fontanarifoodbeverage/" class="fa fa-instagram" target="_blank"></a></p>
+                <p class="icone"><a href="https://www.facebook.com/fontanaricafe" class="fa fa-facebook"
+                        target="_blank"></a> <a href="https://www.instagram.com/fontanarifoodbeverage/"
+                        class="fa fa-instagram" target="_blank"></a></p>
             </div>
         </div>
     </div>
