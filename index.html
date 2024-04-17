@@ -96,7 +96,7 @@
             <p class="centerP">Compila il seguente form, risponderemo il prima possibile.</p>
         </div>
         <div class="colonne form">
-            <form name="contact" method="POST" data-netlify="true">
+            <form name="contact" method="POST" data-netlify="true" netlify>
                 <div class="campoForm primo">
                     <p>Nominativo</p>
                     <input name="nominativo" id="nominativo" placeholder="nominativo" type="text" tabindex="1" required>
@@ -179,7 +179,7 @@
                 button.innerHTML = `Messaggio inviato!`;
             })
             .catch((error) => {
-                alert("sembra che qualcosa sia andato storto, si prega di riprovare. Se il proplema persiste porvate a contattarmi via mail");
+                alert("sembra che qualcosa sia andato storto, si prega di riprovare. Se il proplema persiste porvate a contattarci via mail");
                 button.innerHTML = `Invia`;
             });
         button.disabled = false;
