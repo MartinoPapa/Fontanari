@@ -392,6 +392,7 @@ box-shadow: -1px 1px 30px -9px #2A2B32;
 .piePagina{
     margin-top: 40px;
     padding-top: 20px;
+    padding-bottom: 20px;
     color: #fff;
     background-color: #2a2b32;
 }
