@@ -46,6 +46,7 @@ body {
 }
 
 #home-bg {
+    filter: brightness(50%) !important;
     object-position: 0 40%;
 }
 
