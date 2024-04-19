@@ -68,7 +68,8 @@ body {
 #txt-logo {}
 
 #txt-logo img {
-
+    -webkit-filter: invert(100%); /* Safari/Chrome */
+    filter: invert(100%);
     margin-top: 10px;
     height: 6.5em;
     width: 6.5em;
