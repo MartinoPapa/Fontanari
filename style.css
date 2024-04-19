@@ -47,7 +47,7 @@ body {
 
 #home-bg {
     filter: brightness(50%) !important;
-    object-position: 0 40%;
+    object-position: 0 25%;
 }
 
 .home {
@@ -70,9 +70,9 @@ body {
 #txt-logo img {
     -webkit-filter: invert(100%); /* Safari/Chrome */
     filter: invert(100%);
-    margin-top: 10px;
-    height: 6.5em;
-    width: 6.5em;
+    margin-top: 40px;
+    height: 8em;
+    width: 8em;
 }
 
 .center-v {
