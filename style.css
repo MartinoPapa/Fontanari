@@ -54,6 +54,10 @@ body {
     padding-top: 100px !important;
 }
 
+#titolo{
+    font-size: 2.2em;
+}
+
 .center-o {
     width: 100%;
     display: flex;
@@ -64,7 +68,7 @@ body {
 #txt-logo {}
 
 #txt-logo img {
-    
+
     margin-top: 10px;
     height: 6.5em;
     width: 6.5em;
@@ -85,8 +89,8 @@ body {
 
 .title-left {
     position: relative;
-    width: 60%;
-    left: 10%;
+    width: 63%;
+    left: 7%;
 }
 
 .title-right {
