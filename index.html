@@ -25,7 +25,7 @@
         <img class="background_img" id="home-bg" src="img/sfondoProva.jpg"></img>
         <div class="title-left home">
             <h2 id="titolo">
-                Cafè, Ristorazione, Catering ed Eventi Serali.
+                Cafè, Bistrot, Catering ed Eventi Serali.<br>
                 La <span>tradizione</span> incontra l'<span>innovazione</span>.
             </h2>
             <a id="bcont"><button class="slide">Richiedi un preventivo</button></a>
@@ -60,10 +60,18 @@
             </h2>
 
             <h2 class="right">Mattia.</h2>
-            <div class="colonne" style="padding: 30px 0;">
-                <img src="img/chi0.jpg" class="tilt">
-                <img src="img/chi1.jpg" class="tilt">
-                <img id="terzaImg" src="img/compleanno.jpeg" class="tilt">
+            <div class="colonne" style="padding-top: 50px;">
+                <div class="img">
+                    <img class="carosello" id="imgA" src="img/chi0.jpg"></img>
+                    <a onclick="prevImgA()"><div class="center-v prev"><img src="img/left.png"></div></a>
+                    <a onclick="nextImgA()"><div class="center-v next"><img src="img/right.png"></div></a>
+                </div>
+                <div class="img">
+                    <img class="carosello" id="imgB" src="img/chi1.jpg"></img>
+                    <a onclick="prevImgB()"><div class="center-v prev"><img src="img/left.png"></div></a>
+                    <a onclick="nextImgB()"><div class="center-v next"><img src="img/right.png"></div></a>
+                </div>
+                
             </div>
         </div>
     </div>
@@ -71,7 +79,7 @@
         <img class="background_img" id="sfondo-catering" src="img/sfondoCatering.jpg"></img>
         <div class="title-right">
             <h1>Catering</h1>
-            <h2>Rendiamo concrete le tue idee, interpretiamo con cibo e allesitmento le aspettative di tutti i nostri clienti.</h2>
+            <h2>Rendiamo concrete le tue idee, interpretiamo cibo e allestimento e desideri dei nostri clienti</h2>
         </div>
     </div>
     <div class="section" id="eventi">
@@ -82,46 +90,61 @@
         </div>
     </div>
     <div class="section centrata" id="contatta">
-        <h1 class="corsivo">Richiedi informazioni</h1>
         <div class="quote">
-            <p class="centerP">Compila il seguente form, risponderemo il prima possibile.</p>
+            <div class="colonne" id="c1">
+                <div class="righe">
+                    <h1 class="corsivo">Richiedi informazioni</h1>
+                    <p class="centerP">Compila il seguente form, risponderemo il prima possibile.</p>
+                    <div class="show">
+                        <p class="centerP"><br><br>O se preferisci puoi contattarci ai seguenti recapiti:</p>
+                        <p class="centerP"><span class="material-symbols-outlined">phone</span> 0461-1594077</p>
+                        <p class="centerP"><span class="material-symbols-outlined">mail</span> info@fontanaricafe.it</p>
+                    </div>
+                </div>
+                <div class="colonne form" id="form">
+                    <form name="contact" method="POST" data-netlify="true" netlify>
+                        <div class="campoForm primo">
+                            <p>Nominativo</p>
+                            <input name="nominativo" id="nominativo" placeholder="nominativo" type="text" tabindex="1"
+                                required>
+                        </div>
+                        <div class="campoForm">
+                            <p>Indirizzo email</p>
+                            <input placeholder="indirizzo email" id="email" type="email" name="email" tabindex="2"
+                                required>
+                        </div>
+                        <div class="campoForm">
+                            <p>Numero di telefono</p>
+                            <input name="telefono" placeholder="numero di telefono" id="telefono" type="tel"
+                                tabindex="3" pattern="[0-9]{10}" title="inserisci un numero di telefono valido"
+                                required>
+                        </div>
+                        <div class="campoForm">
+                            <p>Messaggio</p>
+                            <textarea name="messaggio" placeholder="messaggio" tabindex="4" id="messaggio"></textarea>
+                        </div>
+                        <div class="campoForm colonne">
+                            <button class="slideB" name="submit" type="submit" id="contact-submit"
+                                data-submit="...Sending">Invia</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="hide">
+                <p class="centerP">O se preferisci puoi contattarci ai seguenti recapiti:</p>
+                <p class="centerP"><span class="material-symbols-outlined">phone</span> 0461-1594077</p>
+                <p class="centerP"><span class="material-symbols-outlined">mail</span> info@fontanaricafe.it</p>
+            </div>
+
         </div>
-        <div class="colonne form">
-            <form name="contact" method="POST" data-netlify="true" netlify>
-                <div class="campoForm primo">
-                    <p>Nominativo</p>
-                    <input name="nominativo" id="nominativo" placeholder="nominativo" type="text" tabindex="1" required>
-                </div>
-                <div class="campoForm">
-                    <p>Indirizzo email</p>
-                    <input placeholder="indirizzo email" id="email" type="email" name="email" tabindex="2" required>
-                </div>
-                <div class="campoForm">
-                    <p>Numero di telefono</p>
-                    <input name="telefono" placeholder="numero di telefono" id="telefono" type="tel" tabindex="3"
-                        pattern="[0-9]{10}" title="inserisci un numero di telefono valido" required>
-                </div>
-                <div class="campoForm">
-                    <p>Messaggio</p>
-                    <textarea name="messaggio" placeholder="messaggio" tabindex="4" id="messaggio"></textarea>
-                </div>
-                <div class="campoForm colonne">
-                    <button class="slideB" name="submit" type="submit" id="contact-submit"
-                        data-submit="...Sending">Invia</button>
-                </div>
-            </form>
-        </div>
-        <p class="centerP">O se preferisci puoi contattarci ai seguenti recapiti:</p>
-        <p class="centerP"><span class="material-symbols-outlined">phone</span> 0461-1594077</p>
-        <p class="centerP"><span class="material-symbols-outlined">mail</span> info@fontanaricafe.it</p>
     </div>
     <div class="section centrata" id="partner">
         <h1 class="corsivo">I nostri partner</h1>
         <div class="colonne">
             <a href="https://www.facebook.com/MatteoMolinariTrento" target="_blank"><img
-                    src="img/partner/molinari.jpeg"></a>
-            <a href="https://www.corvee.wine/" target="_blank"><img src="img/partner/corvèe.jpeg"></a>
-            <a href="#" target="_blank"><img src="img/partner/creative.jpeg"></a>
+                    src="img/partner/molinari.PNG"></a>
+            <a href="https://www.corvee.wine/" target="_blank"><img src="img/partner/corvèe.PNG"></a>
+            <a href="https://www.instagram.com/creativestudioit?igsh=N2ltMWFudjg2bndq" target="_blank"><img src="img/partner/creative.jpeg"></a>
         </div>
     </div>
     <div class="section">
@@ -144,7 +167,7 @@
         </div>
     </div>
     <div class="section">
-        <div class="colonne piePagina" style="margin-top: 0 !important; padding-top: 0 !important;">
+        <div class="colonne piePagina" style="margin-top: -1px !important; padding-top: 0 !important;">
             <p><span class="material-symbols-outlined">language</span> Web Designer: martino.papa.tn@gmail.com</p>
         </div>
     </div>

@@ -18,7 +18,7 @@ body {
     color: #2a2b32;
     width: 100%;
     font-family: "Montserrat", sans-serif;
-    font-size: 19px;
+    font-size: 24px;
     background-color: #fafafa;
 }
 
@@ -27,6 +27,23 @@ body {
     width: 100%;
 }
 
+
+.home{
+    padding-top: 4em !important;
+    padding-bottom: 10em !important;
+}
+
+#home button {
+    color: white;
+    border: 1px solid white;
+    background: transparent;
+    font-size: 0.9em !important;
+    margin-top: 3.2em !important;
+    font-weight: 300 !important;
+    padding: 0.8em;
+    transition: all 0.5s;
+    text-transform: uppercase;
+}
 #home {
     position: sticky;
     position: -webkit-sticky;
@@ -55,12 +72,8 @@ body {
     object-position: 0 100%;
 }
 
-.home {
-    padding-top: 100px !important;
-}
-
 #titolo{
-    font-size: 2.2em;
+    font-size: 2em;
 }
 
 .center-o {
@@ -75,13 +88,13 @@ body {
 #txt-logo img {
     -webkit-filter: invert(100%); /* Safari/Chrome */
     filter: invert(100%);
-    margin-top: 40px;
-    height: 8em;
-    width: 8em;
+    margin-top: 1.5em;
+    height: 9em;
+    width: 9em;
 }
 
 .center-v {
-    position: absolute;
+    position: absolute !important;
     top: 50%;
     transform: translateY(-50%);
     -ms-transform: translateY(-50%);
@@ -90,7 +103,7 @@ body {
 .title-left,
 .title-right {
     padding-top: 120px;
-    padding-bottom: 120px;
+    padding-bottom: 100px;
 }
 
 .title-left {
@@ -133,18 +146,6 @@ h2 {
 
 span {
     font-weight: 500;
-}
-
-#home button {
-    color: white;
-    border: 1px solid white;
-    background: transparent;
-    font-size: 1.1em;
-    margin-top: 40px;
-    font-weight: 400;
-    padding: 10px;
-    transition: all 0.5s;
-    text-transform: uppercase;
 }
 
 #home button:hover {
@@ -197,7 +198,8 @@ span {
 
 .navbar {
     z-index: 999;
-    position: relative;
+    position: absolute;
+    bottom: 0;
     color: white;
     width: 100%;
     background: transparent;
@@ -231,12 +233,15 @@ span {
     text-align: center;
 }
 
+#chi{
+    padding: 100px 0;
+}
+
 a:hover {
     cursor: pointer;
 }
 
 .chi-siamo h1 {
-    margin-top: 40px;
     font-weight: 250;
     font-size: 2.3em;
 }
@@ -282,11 +287,75 @@ a:hover {
     justify-content: center;
 }
 
-.chi-siamo img {
-    width: 27%;
-    min-width: 200px;
+.righe{
+    display: flex;
+    flex-flow: column wrap;
+    align-content: space-between;
+    justify-content: center;
+    padding: 0 50px;
+}
+
+.chi-siamo .img {
+    width: 30%;
+    min-width: 250px;
+    margin: 15px 3em;
+    height: fit-content;
+    position: relative;
+}
+
+.img .carosello{
+    position: relative;
+    width: 100%;
     height: auto;
-    margin: 15px;
+    top: 0;
+    left: 0;
+}
+
+.prev{
+    left: -1em;
+}
+
+.next{
+    left: 100%;
+    margin-left: -1em;  
+}
+
+.next, .prev{
+    padding: 1em;
+    color: white;
+    background-color: #2a2b32;
+    border-radius: 100%;
+    position: absolute;
+}
+
+.prev img{
+    position: absolute;
+    height: 90%;
+    width: 90%;
+    top: 5%;
+    left: 5%;
+    -webkit-filter: invert(100%); /* Safari/Chrome */
+    filter: invert(100%);
+    object-position: -0.15em 0;
+}
+
+.next img{
+    position: absolute;
+    height: 90%;
+    width: 90%;
+    top: 5%;
+    left: 5%;
+    -webkit-filter: invert(100%); /* Safari/Chrome */
+    filter: invert(100%);
+    object-position: 0.15em 0;
+}
+
+.prev:hover{
+    cursor: pointer;
+}
+
+.next:hover{
+    cursor: pointer;
 }
 
 .right {
@@ -296,11 +365,12 @@ a:hover {
 
 #catering {
     color: white;
+    border-bottom: 50px solid #fafafa;
 }
 
 #eventi {
     color: white;
-    border-top: 2px solid white;
+    
 }
 
 .title-left h2,
@@ -322,16 +392,16 @@ a:hover {
     vertical-align: bottom;
 }
 
-.centrata{
-    margin: 30px 0;
-}
-
 .centrata h1 {
     width: 100%;
     font-weight: 400;
     text-align: center;
-    font-size: 2.3em;
+    font-size: 1.8em;
 
+}
+
+#contatta{
+    padding: 60px 0;
 }
 
 .centrata .centerP{
@@ -345,12 +415,13 @@ fieldset {
 }
 
 .form {
-    padding: 40px 0 !important;
+    
+    
 }
 
 .form form {
-    width: 40%;
-    min-width: 200px;
+    min-width: 450px;
+    margin: 40px;
     padding: 20px 30px;
     background-color: #fafafa;
     -webkit-box-shadow: -1px 1px 30px -9px #2A2B32;
@@ -368,13 +439,13 @@ box-shadow: -1px 1px 30px -9px #2A2B32;
 }
 
 .campoForm p {
-    font-size: 1em;
+    font-size: 1em !important;
     text-align: left;
     width: 100%;
 }
 
 .campoForm input, .campoForm textarea {
-    font-size: 1.1em;
+    font-size: 1em;
     width: calc(100% - 22px);
     border: 1px solid #2a2b32;
     padding: 10px 10px;
@@ -383,7 +454,7 @@ box-shadow: -1px 1px 30px -9px #2A2B32;
 }
 
 .campoForm button{
-    font-size: 1.1em;
+    font-size: 1em;
     padding: 10px;
     font-family: "Montserrat", sans-serif !important;
     text-transform: uppercase;
@@ -398,39 +469,41 @@ box-shadow: -1px 1px 30px -9px #2A2B32;
 }
 
 .centrata p{
-    font-size: 1.3em;
+    font-size: 1.1em;
 }
 
 .piePagina{
-    margin-top: 40px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    margin-top: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     color: #fff;
     background-color: #2a2b32;
+    font-size: 25px;
 }
 
 .piePagina div{
-    padding: 20px 40px;
+    padding: 1em 2.4em;
+    padding-bottom: 0;
 }
 
 .piePagina p{
-    font-size: 1em;
+    font-size: 0.7em;
     min-width: 150px;
 }
 
 .orari h3{
     text-transform: uppercase;
     font-weight: 400;
-    font-size: 1em;
+    font-size: 0.8em;
 }
 
 .orari p{
-    margin: 15px 0;
+    margin: 1em 0;
 }
 
 .orari .icone{
-    margin-top: 30px;
-    font-size: 1.3em;
+    margin-top: 20px;
+    font-size: 1em;
     letter-spacing: 0.2em;
 }
 
@@ -438,33 +511,22 @@ box-shadow: -1px 1px 30px -9px #2A2B32;
     color: #fff !important;
 }
 
-#partner{
-    margin-top: 50px;
-}
-
 #partner a{
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 15%;
-    padding: 10px;
-    min-width: 140px;
+    padding: 0 10px;
+    min-width: 100px;
+    min-height: 100px;
     object-fit: contain;
-    margin: 15px;
-    background-color: #fff;
-    -webkit-box-shadow: -1px 1px 20px -9px #2A2B32;
-    -moz-box-shadow: -1px 1px 20px -9px #2A2B32;
-    -o-box-shadow: -1px 1px 20px -9px #2A2B32;
-    box-shadow: -1px 1px 20px -9px #2A2B32;
-    transition: all 0.2s;
+    margin: 0 15px;
+    background-color: transparent;
 }
-
-#partner a:hover{
-    transform: translateY(-10px);
-}
-
 #partner img{
     width: 100%;
     height: auto;
 }
-
+#partner h1{
+    font-size: 2.2em;
+}
