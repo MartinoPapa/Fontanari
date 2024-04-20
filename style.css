@@ -38,7 +38,7 @@ body {
     border: 1px solid white;
     background: transparent;
     font-size: 0.9em !important;
-    margin-top: 3.2em !important;
+    margin-top: 4.5em !important;
     font-weight: 300 !important;
     padding: 0.8em;
     transition: all 0.5s;
@@ -272,7 +272,7 @@ a:hover {
 
 .chi-siamo .line {
     width: 150px;
-    border-top: 2px solid #8d8e5c;
+    border-top: 2px solid #2a2b32;
 }
 
 .quote {
@@ -296,9 +296,9 @@ a:hover {
 }
 
 .chi-siamo .img {
-    width: 30%;
+    width: 36%;
     min-width: 250px;
-    margin: 15px 3em;
+    margin: 15px 2em;
     height: fit-content;
     position: relative;
 }
@@ -522,6 +522,11 @@ box-shadow: -1px 1px 30px -9px #2A2B32;
     object-fit: contain;
     margin: 0 15px;
     background-color: transparent;
+    transition: all 0.2s;
+}
+
+#partner a:hover{
+    transform: scale(1.05);
 }
 #partner img{
     width: 100%;
