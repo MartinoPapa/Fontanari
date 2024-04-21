@@ -20,6 +20,7 @@ body {
     font-family: "Montserrat", sans-serif;
     font-size: 24px;
     background-color: #fafafa;
+    zoom: 0.9;
 }
 
 .section {
@@ -298,7 +299,7 @@ a:hover {
 }
 
 .chi-siamo .img {
-    width: 34%;
+    width: 32%;
     min-width: 250px;
     margin: 15px 2em;
     height: fit-content;
@@ -471,7 +472,7 @@ box-shadow: -1px 1px 30px -9px #2A2B32;
 }
 
 .centrata p{
-    font-size: 1.1em;
+    font-size: 0.9em;
 }
 
 .piePagina{

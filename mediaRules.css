@@ -1,7 +1,4 @@
 @media only screen and (max-width: 1800px) {
-    body{
-        font-size: 16px;
-    }
     .piePagina{
         font-size: 15px;
     }
@@ -17,7 +14,7 @@
 
 @media only screen and (max-width: 1500px) {
     body{
-        font-size: 15px;
+        font-size: 19px;
     }
     .form form {
         min-width: 400px;
