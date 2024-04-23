@@ -6,20 +6,21 @@ window.onresize = function(){
 };
 
 function computeNavbar(){
-    var homeDiv = document.getElementById("home");
+    /*var homeDiv = document.getElementById("home");*/
     var navbar = document.getElementById("navbar");
-    var top = (navbar.offsetHeight - homeDiv.offsetHeight) + "px";
-    homeDiv.style.top = top;
+    /*var top = (navbar.offsetHeight - homeDiv.offsetHeight) + "px";
+    homeDiv.style.top = top;*/ //barra
+    var off = 0;
     var a = document.getElementById("achi");
-    a.setAttribute('onclick', `window.scrollTo(0, document.getElementById('chi').offsetTop- ${navbar.offsetHeight} );`);
+    a.setAttribute('onclick', `window.scrollTo(0, document.getElementById('chi').offsetTop- ${off} );`);
     a = document.getElementById("acat");
-    a.setAttribute('onclick', `window.scrollTo(0, document.getElementById('catering').offsetTop- ${navbar.offsetHeight} );`);
+    a.setAttribute('onclick', `window.scrollTo(0, document.getElementById('catering').offsetTop- ${off} );`);
     a = document.getElementById("aeve");
-    a.setAttribute('onclick', `window.scrollTo(0, document.getElementById('eventi').offsetTop- ${navbar.offsetHeight-2} );`);
+    a.setAttribute('onclick', `window.scrollTo(0, document.getElementById('eventi').offsetTop- ${off} );`);
     a = document.getElementById("acont");
-    a.setAttribute('onclick', `window.scrollTo(0, document.getElementById('contatta').offsetTop- ${navbar.offsetHeight} );`);
+    a.setAttribute('onclick', `window.scrollTo(0, document.getElementById('contatta').offsetTop- ${off} );`);
     a = document.getElementById("bcont");
-    a.setAttribute('onclick', `window.scrollTo(0, document.getElementById('contatta').offsetTop- ${navbar.offsetHeight} );`);
+    a.setAttribute('onclick', `window.scrollTo(0, document.getElementById('contatta').offsetTop- ${off} );`);
 }
 
 var imgFolder = "img/";
