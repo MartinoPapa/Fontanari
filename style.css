@@ -81,7 +81,7 @@ body {
 }
 
 #home-bg {
-    filter: brightness(85%) !important;
+    filter: brightness(100%) !important;
     object-position: 0 27%;
 }
 
