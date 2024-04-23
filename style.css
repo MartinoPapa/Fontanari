@@ -64,8 +64,12 @@ body {
     z-index: -1;
 }
 
+#titolo, #bcont{
+    display: none;
+}
+
 #home-bg {
-    filter: brightness(100%) !important;
+    filter: brightness(80%) !important;
     object-position: 0 27%;
 }
 
