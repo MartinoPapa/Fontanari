@@ -291,7 +291,7 @@ a:hover {
     font-weight: 500;
 }
 
-.chi-siamo .line {
+.line {
     width: 150px;
     border-top: 2px solid #2a2b32;
 }
@@ -386,7 +386,7 @@ a:hover {
 
 #catering {
     color: white;
-    border-bottom: 50px solid #fafafa;
+    border-bottom: 2px solid #fafafa;
 }
 
 #eventi {
@@ -544,6 +544,10 @@ box-shadow: -1px 1px 30px -9px #2A2B32;
     margin: 0 15px;
     background-color: transparent;
     transition: all 0.2s;
+}
+
+#partner{
+    padding-top: 50px;
 }
 
 #partner a:hover{
