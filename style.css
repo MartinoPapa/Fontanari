@@ -18,9 +18,8 @@ body {
     color: #2a2b32;
     width: 100%;
     font-family: "Montserrat", sans-serif;
-    font-size: 24px;
+    font-size: 21px;
     background-color: #fafafa;
-    zoom: 0.9;
 }
 
 .section {
@@ -46,12 +45,10 @@ body {
     text-transform: uppercase;
 }
 #home {
-    zoom: 0.9;
     position: sticky;
     position: -webkit-sticky;
     z-index: 999;
     color: white;
-    max-height: 100vh;
 }
 
 .background_img {
@@ -299,7 +296,7 @@ a:hover {
 }
 
 .chi-siamo .img {
-    width: 32%;
+    width: 30%;
     min-width: 250px;
     margin: 15px 2em;
     height: fit-content;
