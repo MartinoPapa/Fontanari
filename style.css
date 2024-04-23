@@ -85,14 +85,18 @@ body {
     justify-content: center;
 }
 
-#txt-logo {}
+#txt-logo {
+    position: absolute;
+}
 
 #txt-logo img {
     -webkit-filter: invert(100%); /* Safari/Chrome */
     filter: invert(100%);
-    margin-top: 1.5em;
-    height: 9em;
-    width: 9em;
+    /*
+    margin-top: 1.5em;*/
+    margin-top: -5em;
+    height: 13em;
+    width: auto;
 }
 
 .center-v {
