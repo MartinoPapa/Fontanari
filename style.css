@@ -64,10 +64,6 @@ body {
     z-index: -1;
 }
 
-#titolo, #bcont{
-    display: none;
-}
-
 #home-bg {
     filter: brightness(100%) !important;
     object-position: 0 27%;
@@ -90,7 +86,6 @@ body {
 }
 
 #txt-logo {
-    position: absolute;
 }
 
 #txt-logo img {
@@ -98,8 +93,8 @@ body {
     filter: invert(100%);
     /*
     margin-top: 1.5em;*/
-    margin-top: -5em;
-    height: 13em;
+    margin-top: 2em;
+    height: 12em;
     width: auto;
 }
 
