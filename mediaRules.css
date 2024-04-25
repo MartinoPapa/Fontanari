@@ -2,7 +2,7 @@
     .piePagina{
         font-size: 15px;
     }
-    .home{
+    body{
        font-size: 18px;
     }
     #home button {
@@ -13,13 +13,13 @@
 
 @media only screen and (max-width: 2000px) {
     body{
-        font-size: 17px;
+        font-size: 17px !important;
     }
 }
 
 @media only screen and (max-width: 1500px) {
     body{
-        font-size: 16px;
+        font-size: 16px !important;
     }
     .form form {
         min-width: 400px;
@@ -28,7 +28,7 @@
 
 @media only screen and (max-width: 800px) {
     body{
-        font-size: 13px;
+        font-size: 13px !important;
     }
     #terzaImg{
         display: none;
@@ -37,13 +37,13 @@
 
 @media only screen and (max-width: 600px) {
     body{
-        font-size: 11px;
+        font-size: 11px !important;
     }
 }
 
 @media only screen and (max-width: 550px) {
     body{
-        font-size: 9px;
+        font-size: 9px !important;
     }
 
     .form form{
