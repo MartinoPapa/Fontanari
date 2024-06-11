@@ -597,9 +597,8 @@ box-shadow: -1px 1px 30px -9px #2A2B32;
 
 .menu img{
     margin-top: 20px;
-    margin-left: 20%;
+    margin-left: calc(20% - 1px);
     width: 60%;
-    padding: 15px;
     border: 2px solid #2a2b32;
 }
 
