@@ -86,6 +86,7 @@ body {
 }
 
 #sfondo-catering{
+    filter: brightness(60%) !important;
     object-position: 0 80%;
     object-fit: cover;
 }
