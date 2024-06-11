@@ -91,6 +91,12 @@ body {
     object-fit: cover;
 }
 
+#sfondo-intermezzo{
+    filter: brightness(60%) !important;
+    object-position: 0 70% !important;
+    object-fit: cover;
+}
+
 #titolo{
     font-size: 2em;
 }
