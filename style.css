@@ -562,8 +562,8 @@ box-shadow: -1px 1px 30px -9px #2A2B32;
 }
 
 .menu{
-    width: 80%;
-    left: 10%;
+    width: 95%;
+    left: 2.5%;
     padding: 80px 0px;
     display: flex;
     flex-flow: row wrap;
@@ -572,8 +572,8 @@ box-shadow: -1px 1px 30px -9px #2A2B32;
 }
 
 .colonna{
-    padding: 20px 0;
-    width: 48%;
+    padding: 20px 100px;
+    width: calc(48% - 200px);
     min-width: 350px;
 }
 
