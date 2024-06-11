@@ -71,7 +71,6 @@ body {
 }
 
 .background_img {
-    filter: brightness(30%);
     position: absolute;
     left: 0;
     top: 0;
@@ -87,8 +86,8 @@ body {
 }
 
 #sfondo-catering{
-    filter: brightness(50%) !important;
-    object-position: 0 100%;
+    object-position: 0 80%;
+    object-fit: cover;
 }
 
 #titolo{
@@ -610,5 +609,5 @@ box-shadow: -1px 1px 30px -9px #2A2B32;
 }
 
 #separazione{
-    height: 50vh;
+    height: 60vh;
 }
