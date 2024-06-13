@@ -82,18 +82,18 @@ body {
 
 #home-bg {
     filter: brightness(60%) !important;
-    object-position: 0 27%;
+    object-position: 50% 27%;
 }
 
 #sfondo-catering{
     filter: brightness(60%) !important;
-    object-position: 0 100% !important;
+    object-position: 50% 100% !important;
     object-fit: cover;
 }
 
 #sfondo-intermezzo{
     filter: brightness(60%) !important;
-    object-position: 0 70% !important;
+    object-position: 50% 70% !important;
     object-fit: cover;
 }
 
@@ -578,6 +578,7 @@ box-shadow: -1px 1px 30px -9px #2A2B32;
 }
 
 .colonna{
+    margin: 20px 0;
     padding: 20px 100px;
     width: calc(48% - 200px);
     min-width: 350px;
@@ -621,5 +622,5 @@ box-shadow: -1px 1px 30px -9px #2A2B32;
 }
 
 .sucursale{
-    
+    text-align: center;
 }
