@@ -306,6 +306,11 @@ a:hover {
     margin-left: 5%;
 }
 
+@font-face {
+    font-family: logo;
+    src: url(font/tahoma.ttf);
+}
+
 #anima{
     display: flex;
     justify-content: center;
