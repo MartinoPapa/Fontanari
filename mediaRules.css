@@ -33,6 +33,10 @@
     #terzaImg{
         display: none;
     }
+    #home-bg {
+        filter: brightness(60%) !important;
+        object-position: 50% 27%;
+    }
 }
 
 @media only screen and (max-width: 600px) {

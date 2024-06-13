@@ -93,7 +93,7 @@ body {
 
 #sfondo-intermezzo{
     filter: brightness(60%) !important;
-    object-position: 50% 70% !important;
+    object-position: 50% 50% !important;
     object-fit: cover;
 }
 
