@@ -93,7 +93,7 @@ body {
 
 #sfondo-intermezzo{
     filter: brightness(60%) !important;
-    object-position: 50% 50% !important;
+    object-position: 50% 30% !important;
     object-fit: cover;
 }
 
@@ -618,7 +618,7 @@ box-shadow: -1px 1px 30px -9px #2A2B32;
 }
 
 #separazione{
-    height: 60vh;
+    height: 70vh;
 }
 
 .sucursale{
