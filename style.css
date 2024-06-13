@@ -306,6 +306,16 @@ a:hover {
     margin-left: 5%;
 }
 
+#anima{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#anima h1{
+    width: 100% !important;
+}
+
 .colonne {
     display: flex;
     flex-flow: row wrap;
