@@ -593,7 +593,7 @@ box-shadow: -1px 1px 30px -9px #2A2B32;
 }
 
 .colonna{
-    margin: 20px 0;
+    margin: 0;
     padding: 20px 100px;
     width: calc(48% - 200px);
     min-width: 350px;
@@ -619,9 +619,8 @@ box-shadow: -1px 1px 30px -9px #2A2B32;
 }
 
 .menu img{
-    margin-top: 15px;
-    margin-left: calc(10%);
-    width: 80%;
+    margin-left: calc(20%);
+    width: 60%;
 }
 
 .lineaPartner{
@@ -641,3 +640,11 @@ box-shadow: -1px 1px 30px -9px #2A2B32;
     padding: 40px 0;
 }
 
+.comingsoon{
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.comingsoon h1{
+    font-size: 2em;
+}
