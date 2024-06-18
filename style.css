@@ -19,6 +19,7 @@ a {
 
 html{
     width: 100%;
+    overflow-x: hidden;
 }
 
 body {
@@ -27,6 +28,7 @@ body {
     font-family: "Montserrat", sans-serif;
     font-size: 21px;
     background-color: #fafafa;
+    overflow-x: hidden;
 }
 
 .section {
