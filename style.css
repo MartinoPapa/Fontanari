@@ -67,7 +67,7 @@ body {
     position: -webkit-sticky;
     z-index: 999;
     color: white;
-    min-height: 100vh;
+    min-height: 100dvh;
 }
 
 .background_img {
