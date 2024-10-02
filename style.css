@@ -319,9 +319,18 @@ a:hover {
 }
 
 #anima{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+    width: 80%;
+    text-align: center;
+}
+
+#anima img{
+    width: 28%;
+    min-width: 250px;
+    margin: 0;
+}
+
+#anima p{
+    margin: 20px;
 }
 
 #anima h1{
@@ -649,7 +658,6 @@ box-shadow: -1px 1px 30px -9px #2A2B32;
 
 .comingsoon{
     width: 100%;
-    margin-bottom: 40px;
 }
 
 .comingsoon h1{
