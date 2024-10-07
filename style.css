@@ -651,6 +651,16 @@ box-shadow: -1px 1px 30px -9px #2A2B32;
     height: 70vh;
 }
 
+#bgAnima{
+    height: 70vh;
+}
+
+#bgAnima img{
+    filter: brightness(60%) !important;
+    object-position: 50% 50% !important;
+    object-fit: cover;
+}
+
 .sucursale{
     text-align: center;
     padding: 40px 0;
