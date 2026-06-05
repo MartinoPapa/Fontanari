@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
@@ -12,12 +11,13 @@
     font-weight: 400;
     font-style: normal;
     text-transform: none;
-  }
+}
+
 a {
     text-decoration: none;
 }
 
-html{
+html {
     width: 100%;
     overflow-x: hidden;
 }
@@ -36,8 +36,9 @@ body {
     width: 100%;
 }
 
-.home img{
-    -webkit-filter: invert(100%); /* Safari/Chrome */
+.home img {
+    -webkit-filter: invert(100%);
+    /* Safari/Chrome */
     filter: invert(100%);
     /*
     margin-top: 1.5em;*/
@@ -47,7 +48,7 @@ body {
 }
 
 
-.home{
+.home {
     padding-bottom: 10em;
     text-align: center;
     position: absolute;
@@ -68,6 +69,7 @@ body {
     transition: all 0.5s;
     text-transform: uppercase;
 }
+
 #home {
     position: sticky;
     position: -webkit-sticky;
@@ -91,19 +93,19 @@ body {
     object-position: 0 27%;
 }
 
-#sfondo-catering{
+#sfondo-catering {
     filter: brightness(60%) !important;
     object-position: 50% 100% !important;
     object-fit: cover;
 }
 
-#sfondo-intermezzo{
+#sfondo-intermezzo {
     filter: brightness(60%) !important;
     object-position: 50% 70% !important;
     object-fit: cover;
 }
 
-#titolo{
+#titolo {
     font-size: 2em;
 }
 
@@ -114,11 +116,11 @@ body {
     justify-content: center;
 }
 
-#txt-logo {
-}
+#txt-logo {}
 
 #txt-logo img {
-    -webkit-filter: invert(100%); /* Safari/Chrome */
+    -webkit-filter: invert(100%);
+    /* Safari/Chrome */
     filter: invert(100%);
     /*
     margin-top: 1.5em;*/
@@ -268,7 +270,7 @@ span {
     text-align: center;
 }
 
-#chi{
+#chi {
     padding: 100px 0;
 }
 
@@ -318,22 +320,22 @@ a:hover {
     src: url(font/tahoma.ttf);
 }
 
-#anima{
+#anima {
     width: 80%;
     text-align: center;
 }
 
-#anima img{
+#anima img {
     width: 28%;
     min-width: 250px;
     margin: 0;
 }
 
-#anima p{
+#anima p {
     margin: 20px;
 }
 
-#anima h1{
+#anima h1 {
     width: 100% !important;
 }
 
@@ -344,7 +346,7 @@ a:hover {
     justify-content: center;
 }
 
-.righe{
+.righe {
     display: flex;
     flex-flow: column wrap;
     align-content: space-between;
@@ -360,7 +362,7 @@ a:hover {
     position: relative;
 }
 
-.img .carosello{
+.img .carosello {
     position: relative;
     width: 100%;
     height: auto;
@@ -368,16 +370,17 @@ a:hover {
     left: 0;
 }
 
-.prev{
+.prev {
     left: -1em;
 }
 
-.next{
+.next {
     left: 100%;
-    margin-left: -1em;  
+    margin-left: -1em;
 }
 
-.next, .prev{
+.next,
+.prev {
     padding: 1em;
     color: white;
     background-color: #2a2b32;
@@ -385,33 +388,35 @@ a:hover {
     position: absolute;
 }
 
-.prev img{
+.prev img {
     position: absolute;
     height: 90%;
     width: 90%;
     top: 5%;
     left: 5%;
-    -webkit-filter: invert(100%); /* Safari/Chrome */
+    -webkit-filter: invert(100%);
+    /* Safari/Chrome */
     filter: invert(100%);
     object-position: -0.15em 0;
 }
 
-.next img{
+.next img {
     position: absolute;
     height: 90%;
     width: 90%;
     top: 5%;
     left: 5%;
-    -webkit-filter: invert(100%); /* Safari/Chrome */
+    -webkit-filter: invert(100%);
+    /* Safari/Chrome */
     filter: invert(100%);
     object-position: 0.15em 0;
 }
 
-.prev:hover{
+.prev:hover {
     cursor: pointer;
 }
 
-.next:hover{
+.next:hover {
     cursor: pointer;
 }
 
@@ -427,7 +432,7 @@ a:hover {
 
 #eventi {
     color: white;
-    
+
 }
 
 .title-left h2,
@@ -457,11 +462,11 @@ a:hover {
 
 }
 
-#contatta{
+#contatta {
     padding: 60px 0;
 }
 
-.centrata .centerP{
+.centrata .centerP {
     width: 100%;
     text-align: center;
     margin-top: 10px;
@@ -471,10 +476,7 @@ fieldset {
     border: none;
 }
 
-.form {
-    
-    
-}
+.form {}
 
 .form form {
     min-width: 450px;
@@ -482,16 +484,16 @@ fieldset {
     padding: 20px 30px;
     background-color: #fafafa;
     -webkit-box-shadow: -1px 1px 30px -9px #2A2B32;
--moz-box-shadow: -1px 1px 30px -9px #2A2B32;
--o-box-shadow: -1px 1px 30px -9px #2A2B32;
-box-shadow: -1px 1px 30px -9px #2A2B32;
+    -moz-box-shadow: -1px 1px 30px -9px #2A2B32;
+    -o-box-shadow: -1px 1px 30px -9px #2A2B32;
+    box-shadow: -1px 1px 30px -9px #2A2B32;
 }
 
 .campoForm {
     padding: 5px 0;
 }
 
-.primo{
+.primo {
     padding-top: 0 !important;
 }
 
@@ -501,7 +503,8 @@ box-shadow: -1px 1px 30px -9px #2A2B32;
     width: 100%;
 }
 
-.campoForm input, .campoForm textarea {
+.campoForm input,
+.campoForm textarea {
     font-size: 1em;
     width: calc(100% - 22px);
     border: 1px solid #2a2b32;
@@ -510,7 +513,17 @@ box-shadow: -1px 1px 30px -9px #2A2B32;
     resize: none;
 }
 
-.campoForm button{
+.campoForm input[type="checkbox"] {
+    width: auto;
+    margin-right: 10px;
+    transform: scale(1.5);
+    transform-origin: left center;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.campoForm button {
+    margin-top: 5px;
     font-size: 1em;
     padding: 10px;
     font-family: "Montserrat", sans-serif !important;
@@ -521,15 +534,15 @@ box-shadow: -1px 1px 30px -9px #2A2B32;
     transition: all 0.2s;
 }
 
-.campoForm button:hover{
+.campoForm button:hover {
     cursor: pointer;
 }
 
-.centrata p{
+.centrata p {
     font-size: 0.9em;
 }
 
-.piePagina{
+.piePagina {
     margin-top: 30px;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -538,37 +551,37 @@ box-shadow: -1px 1px 30px -9px #2A2B32;
     font-size: 25px;
 }
 
-.piePagina div{
+.piePagina div {
     padding: 1em 2.4em;
     padding-bottom: 0;
 }
 
-.piePagina p{
+.piePagina p {
     font-size: 0.7em;
     min-width: 150px;
 }
 
-.orari h3{
+.orari h3 {
     text-transform: uppercase;
     font-weight: 400;
     font-size: 0.8em;
 }
 
-.orari p{
+.orari p {
     margin: 1em 0;
 }
 
-.orari .icone{
+.orari .icone {
     margin-top: 20px;
     font-size: 1em;
     letter-spacing: 0.2em;
 }
 
-.icone a{
+.icone a {
     color: #fff !important;
 }
 
-#partner a{
+#partner a {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -582,23 +595,25 @@ box-shadow: -1px 1px 30px -9px #2A2B32;
     transition: all 0.2s;
 }
 
-#partner{
+#partner {
     padding-top: 50px;
 }
 
-#partner a:hover{
+#partner a:hover {
     transform: scale(1.05);
 }
-#partner img{
+
+#partner img {
     width: 100%;
     height: auto;
 }
-#partner h1{
+
+#partner h1 {
     text-transform: uppercase;
     font-size: 1.6em;
 }
 
-.menu{
+.menu {
     width: 95%;
     left: 2.5%;
     padding: 80px 0px;
@@ -608,25 +623,25 @@ box-shadow: -1px 1px 30px -9px #2A2B32;
     justify-content: center;
 }
 
-.colonna{
+.colonna {
     margin: 0;
     padding: 20px 100px;
     width: calc(48% - 200px);
     min-width: 350px;
 }
 
-.vline{
+.vline {
     border-left: 2px solid #2A2B32;
 }
 
-.menu h1{
+.menu h1 {
     text-transform: uppercase;
     text-align: center;
     font-size: 1.2em;
     font-weight: 500;
 }
 
-.menu p{
+.menu p {
     margin: 20px 60px;
     text-align: center;
     font-size: 1.2em;
@@ -634,12 +649,12 @@ box-shadow: -1px 1px 30px -9px #2A2B32;
     line-height: 1.5;
 }
 
-.menu img{
+.menu img {
     margin-left: calc(20%);
     width: 60%;
 }
 
-.lineaPartner{
+.lineaPartner {
     position: relative;
     width: 60%;
     margin-left: 20%;
@@ -647,29 +662,29 @@ box-shadow: -1px 1px 30px -9px #2A2B32;
     height: 30px;
 }
 
-#separazione{
+#separazione {
     height: 70vh;
 }
 
-#bgAnima{
+#bgAnima {
     height: 70vh;
 }
 
-#bgAnima img{
+#bgAnima img {
     filter: brightness(60%) !important;
     object-position: 50% 50% !important;
     object-fit: cover;
 }
 
-.sucursale{
+.sucursale {
     text-align: center;
     padding: 40px 0;
 }
 
-.comingsoon{
+.comingsoon {
     width: 100%;
 }
 
-.comingsoon h1{
+.comingsoon h1 {
     font-size: 2em;
 }
